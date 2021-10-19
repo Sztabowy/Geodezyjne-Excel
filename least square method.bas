@@ -140,10 +140,10 @@ elipsy = x
 End Function
 
 Function Tworzenie_T(Dane As Range, t0 As Double)
-Const maks_iloœæ_obserwacji = 50
+Const maks_iloÅ“Ã¦_obserwacji = 50
 
 
-Dim x(maks_iloœæ_obserwacji, maks_iloœæ_obserwacji) As Double
+Dim x(maks_iloÅ“Ã¦_obserwacji, maks_iloÅ“Ã¦_obserwacji) As Double
 
 w = Dane.Rows.Count
 For i = 1 To w
