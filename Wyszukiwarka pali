@@ -1,0 +1,22 @@
+Function najblizszy_pal(katalog As Range, x As Double, y As Double)
+
+Const maks_ilość_obserwacji = 50
+
+w = katalog.Rows.Count
+Dim tab1(4, 3000) As Double
+
+For i = 1 To w
+    tab1(1, i) = odleglosc(x, y, katalog(i, 2), katalog(i, 3))
+Next i
+
+Min = tab1(1, 1)
+wiersz = 1
+For i = 1 To w
+If tab1(1, i) < Min Then
+Min = tab1(1, i)
+wiersz = i
+End If
+Next i
+najblizszy_pal = katalog(wiersz, 1)
+'najblizszy_pal = wiersz
+End Function
